@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeCard = props => {
 	return (
-		<div className="col-12 col-sm-6 col-md-4">
+		<div className="col-12 col-sm-6 col-md-4" style={{ paddingTop: 5 }}>
 			<div className="card" style={{ minWidth: "11rem" }}>
 				<img
 					className="card-img-top rounded mx-auto d-block"
@@ -13,9 +13,9 @@ const HomeCard = props => {
 				<div className="card-body">
 					<h5 className="card-title">{props.titulo}</h5>
 					<p className="card-text">{props.texto}</p>
-					<a href="#" className="btn btn-primary" onClick={props.acao}>
+					<button className="btn btn-primary" onClick={props.acao}>
 						{props.rotuloBotao}
-					</a>
+					</button>
 				</div>
 			</div>
 		</div>

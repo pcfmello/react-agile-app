@@ -9,7 +9,7 @@ class App extends Component {
 		return (
 			<div className="container">
 				<NavBar nomeLogo="PARJS" />
-				<Home />
+				{this.props.children}
 			</div>
 		);
 	}

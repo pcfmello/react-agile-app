@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router";
 
 const NavBar = props => {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-light bg-light">
-			<a className="navbar-brand" href="#">
+			<Link to="/" className="navbar-brand">
 				{props.nomeLogo}
-			</a>
+			</Link>
 			<button
 				className="navbar-toggler"
 				type="button"
@@ -21,19 +22,19 @@ const NavBar = props => {
 			<div className="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul className="navbar-nav mr-auto">
 					<li className="nav-item active">
-						<a className="nav-link" href="#">
+						<Link to="/releases" className="nav-link">
 							Releases <span className="sr-only">(current)</span>
-						</a>
+						</Link>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link" href="#">
+						<Link to="/backlog" className="nav-link">
 							Backlog
-						</a>
+						</Link>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link" href="#">
+						<Link to="/sprints" className="nav-link">
 							Sprints
-						</a>
+						</Link>
 					</li>
 				</ul>
 				<form className="form-inline my-2 my-lg-0">
